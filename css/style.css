@@ -1,0 +1,187 @@
+@charset "uft-8";
+@import url("https://fonts.googleapis.com/css2?family=0rbitron&display=swap");
+
+/* 기본 스타일 전체 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 프로필 카드 배경 설정 */
+
+body {
+  background-color: #ebfaff;
+}
+
+section {
+  /* 요소 크기 지정과 색 설정 */
+  width: 340px;
+  padding: 30px;
+  background-color: #fff;
+  /* 요소를 상하여백 50px 띄우고 자동 중앙 정렬 */
+  margin: 50px auto;
+  /* 그림자 설정 (옆, 아래, 번짐 정도, rgba(색상 RGB, 투명도)) */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  /* 테두리 모서리 둥글게 */
+  border-radius: 10px;
+}
+
+/* 프로필 카드의 메뉴 설정 */
+
+section nav.menu {
+  /* 메뉴 요소를 부모 요소의 100% 너비로 맞춤 */
+  width: 100%;
+}
+
+/* 메뉴의 아이콘 요소를 좌우로 float 설정 */
+section nav.menu a:nth-of-type(1) {
+  float: left;
+}
+
+section nav.menu a:nth-of-type(2) {
+  float: right;
+}
+
+/* 메뉴의 아이콘 요소 폰트 크기와 색 설정 */
+section nav.menu a {
+  font-size: 20px;
+  color: #666;
+}
+
+/* float 해제 */
+section nav.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 프로필 이미지 포지션 설정 */
+
+section article.profile {
+  /* 이미지의 너비를 section에 맞추고 가운데 위치 */
+  width: 100%;
+  text-align: center;
+}
+
+/* 이미지 요소 크기 설정 */
+section article.profile img {
+  width: 200px;
+  height: 200px;
+  /* 이미지 동그랗게 */
+  border-radius: 50%;
+  /* 이미지 그림자 설정 */
+  box-shadow: 5px 15px 30px rgba(137, 216, 230, 0.8);
+  /* 이미지 아래 바깥 여백 설정 */
+  margin-bottom: 20px;
+}
+
+/* article 요소의 글자와 버튼 설정 */
+section article.profile h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "arial";
+  /* 글자 요소의 높이 설정 */
+  line-height: 1;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+section article.profile h2 {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "arial";
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+section a.btnView {
+  /* 안라인 요소인 a태그를 블록 요소로 변경 */
+  display: block;
+  background-color: #444;
+  /* 버튼 크기 설정 */
+  width: 180px;
+  height: 32px;
+  /* 버튼 위치 설정 */
+  margin: 0px auto 20px;
+  /* 버튼 둥글게 */
+  border-radius: 16px;
+  /* 버튼의 폰트 설정 */
+  font-size: 10px;
+  font-family: "arial";
+  font-weight: bold;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  /* 버튼의 배경을 그라디언트로 설정 */
+  background: linear-gradient(45deg, #4affff, #35e0f7);
+  /* 버튼 그림자 설정 */
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.493);
+}
+
+/* article 요소 아래 연락처 목록 설정 */
+
+section ul.contact {
+  margin-bottom: 25px;
+}
+
+/* li요소 너비, 밑줄 설정 */
+section ul.contact li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0px;
+}
+
+/* li 마지막 요소만 밑줄 제거 */
+section ul.contact li:last-child {
+  border-bottom: none;
+}
+
+section ul.contact li span {
+  font-size: 11px;
+  font-weight: normal;
+  font-family: "orbitron";
+  color: #555;
+  /* 자간 간격 설정 */
+  letter-spacing: 1px;
+}
+
+section ul.contact li i {
+  font-size: 15px;
+  color: #555;
+  /* 아이콘 요소 너비 설정으로 글자와 간격 벌리기 */
+  width: 20%;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+/* 다른 프로필 연결 버튼 설정 */
+
+/* 연결 버튼 중앙 정렬 */
+section nav.others {
+  width: 100%;
+  text-align: center;
+}
+
+section nav.others a {
+  /* 인라인 블록 요소로 변경 */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #444;
+  /* 간격 */
+  margin: 0px 10px;
+}
+
+/* 각 버튼 색상 설정 */
+section nav.others a:nth-of-type(1) {
+}
